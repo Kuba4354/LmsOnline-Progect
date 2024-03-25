@@ -1,12 +1,20 @@
 package group;
 
 public class GeneredID {
-    public static int id = 0;
-    public static int studentsId = 0;
-    public static int generetorid() {
-        return (++id);
+    public static long idGroup = 0;
+    public static long idLesson = 0;
+    public static long idStudent = 0;
+
+    public static long generatorGroup(){
+        return (++idGroup);
     }
-    public static int generateStudend(){
-        return (++studentsId);
+
+    public static long generatorLesson(){
+        return (++idLesson);
+    }
+
+    public static long generatorStudent(){
+        return (++idStudent);
     }
 }
+

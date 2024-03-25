@@ -3,7 +3,8 @@ package service;
 import role.Admin;
 
 public interface AdminService {
-    Admin voiti(Admin admin);
-    Admin izmenit(Admin admin);
+    Admin login(Admin admin);
+
+    Admin changePassword(Admin admin);
 
 }

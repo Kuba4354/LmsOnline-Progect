@@ -4,24 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lessons {
-    private int Id;
+    private Long Id;
     private String lessonsName;
     private String taskdescription;
 
     List<Group> groups = new ArrayList<>();
 
-    public Lessons(int id, String lessonsName, String taskdescription, List<Group> groups) {
+    public Lessons(Long id, String lessonsName, String taskdescription, List<Group> groups) {
         Id = id;
         this.lessonsName = lessonsName;
         this.taskdescription = taskdescription;
         this.groups = groups;
     }
 
-    public int getId() {
+    public Lessons() {
+
+    }
+
+    public Long getId() {
         return Id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         Id = id;
     }
 

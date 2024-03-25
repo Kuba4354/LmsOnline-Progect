@@ -1,16 +1,45 @@
 package role;
 
 public class Admin {
-    String email = "Kuba@gmail.com";
-    String password = "1234";
+    private long id;
+    private String firstName = "Kudayberdi";
+    private String lastName = "Gapurov";
+    private String email = "Kuba@gmail.com";
+    private String password = "Kuba123";
 
     public Admin() {
-
     }
 
-    public Admin(String email, String password) {
+    public Admin(long id, String firstName, String lastName, String email, String password) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
         this.password = password;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {
@@ -31,9 +60,12 @@ public class Admin {
 
     @Override
     public String toString() {
-        return "Admin{" +
-                "email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        return "Admin: \n" +
+                "id =         " + id + "\n" +
+                "firstName =  " + firstName + '\'' + "\n" +
+                "lastName =   " + lastName + '\'' + "\n" +
+                "email =      " + email + '\'' + "\n" +
+                "password=    " + password + '\'';
     }
 }
+

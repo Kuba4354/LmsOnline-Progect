@@ -5,11 +5,14 @@ import group.Group;
 import java.util.List;
 
 public interface GroupService {
-    List<Group> addNewGroups();
+    List<Group> addGroup();
 
-    public Group getGroup();
+    List<Group> getAllGroups();
 
-    public Group updateGroup();
+    Group getGroupByName(String groupName);
 
-    public List<Group> getAllGroup();
+    String upDateGroup(String groupName);
+
+    String deleteGroup(String groupName);
+
 }
